@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+    
+<div style="text-align:center" class="container" [@listStagger]>
+
+   <form id="contact" #userForm = "ngForm" (ngSubmit)="onSubmit()" >
+        
+
+    <label  style="color: #02D807; font-size: 20px;" id="result" ></label>
+    <h3 style="color:green">{{message}}</h3>
+    <h3>Contact Form </h3>
+
+    <h4>Contact us for Help</h4>
+    <fieldset>
+      <input placeholder="Your name" name="name" type="text" [(ngModel)]="userModel.name">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" name="email"   type="email" tabindex="2" [(ngModel)]="userModel.email">
+      
+     
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" name="phone"  type="tel" tabindex="3" [(ngModel)]="userModel.phone">
+      
+    </fieldset>
+    <fieldset>
+      <input placeholder="Message Address" type="text" name="message_address" tabindex="4" [(ngModel)]="userModel.message_address">
+      
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." name="message"  tabindex="5" [(ngModel)]="userModel.message"></textarea>
+
+    </fieldset>
+    <fieldset>
+      <button  type="submit" id="contact-submit"  >Send</button>
+    </fieldset>
+    
+  </form>
+</div>
