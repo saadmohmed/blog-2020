@@ -5,10 +5,11 @@
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
+
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-   "postinstall": "ng build --aot --prod",
+  
    "deploy": "git push origin master && git push heroku master"
    
   },
@@ -34,8 +35,7 @@
   
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
-    "@angular/cli": "~7.0.2",
-    "@angular/compiler-cli": "~7.0.0",
+
     "@angular/language-service": "~7.0.0",
     "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
