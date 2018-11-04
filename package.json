@@ -3,17 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server/server.js",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build — aot — prod"
+   "postinstall": "ng build --aot --prod",
+   "deploy": "git push origin master && git push heroku master"
+   
   },
-   "engines": {
-    "node": "10.11.0",
-    "npm": "6.4.1"
-  },
+ 
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.0.0",
@@ -54,5 +53,9 @@
     "tslint": "~5.11.0",
     "typescript": "~3.1.1"
     
-  }
+  },
+    "engines": {
+      "node": "10.11.0",
+      "npm": "6.4.1"
+    }
 }
