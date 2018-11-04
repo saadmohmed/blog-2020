@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "http-server",
+    "start": "node server/server.js",
     "build": "ng build",
     "test": "ng test",
-    "lint": "tslint \"src/**/*.ts\"",
-    "e2e": "protractor",
-    "preinstall": "npm install -g http-server",
-    "postinstall": "ng build && mv dist/* ."
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "postinstall":"ng build --prod"
   },
    "engines": {
     "node": "10.11.0",
@@ -26,6 +25,8 @@
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
+    "@angular/cli": "~7.0.2",
+    "@angular/compiler-cli": "~7.0.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
@@ -33,8 +34,7 @@
   
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
-    "@angular/cli": "~7.0.2",
-    "@angular/compiler-cli": "~7.0.0",
+    
     "@angular/language-service": "~7.0.0",
     "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
