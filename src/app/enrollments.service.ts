@@ -7,9 +7,9 @@ import { Message } from './message';
   providedIn: 'root'
 })
 export class EnrollmentsService {
-  url =    'http://www.contactusholo.tk/load.php';
-  url_2 = 'http://www.contactusholo.tk/all.php';
-  url_3 = 'http://www.contactusholo.tk/send_reply.php';
+  url =    'https://contactustutforholo.000webhostapp.com/load.php';
+  url_2 = 'https://contactustutforholo.000webhostapp.com/all.php';
+  url_3 = 'https://contactustutforholo.000webhostapp.com/send_reply.php';
   constructor(private http: HttpClient) { }
 
   enroll(user : User){
