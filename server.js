@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/dist/new-blog'));
 
 app.get('/*', function (req, res) {
     // Replace the '/dist/<to_your_project_name>/index.html'
-    res.sendFile(path.join(__dirname +'/dist/new-blog/index.html'));
+    res.sendFile(path.join(__dirname +'/dist/new-blog/src/index.html'));
 });
 const server = http.createServer(app);
 // Start the app by listening on the default Heroku port
